@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="../style/style.css">
+   <title>الذكرى ياليبيين | الاعدادات</title>
+</head>
+<body>
+   <header class="header_container">
+      <div class="header_box responsive_container_lg">
+         <!-- logo -->
+         <a href="../index.html" class="logo">
+            <img src="../img/memory_logo.png" alt="memory logo image">
+         </a>
+
+         <!-- navbar container -->
+
+         <ul class="navbar_container">
+            <div class="lg_screen">
+               <li class="navber_li">
+                  <a href="/blog">المدونة</a>
+               </li>
+               <li class="navber_li">
+                  <a href="/login">تسجيل الدخول</a>
+               </li>
+               <li class="navber_li">
+                  <a href="/register">حساب جديد</a>
+               </li>
+            </div>
+
+            <div class="md_screen">
+               <button class="btn_menu">
+                  <span class="menu_icon"></span>
+               </button>
+
+               <div class="navbar_md">
+                  <li class="navber_li">
+                     <a href="/blog">المدونة</a>
+                  </li>
+                  <li class="navber_li">
+                     <a href="/login">تسجيل الدخول</a>
+                  </li>
+                  <li class="navber_li">
+                     <a href="/register">حساب جديد</a>
+                  </li>
+               </div>
+
+            </div>
+         </ul>
+      </div>
+   </header>
+
+   <section class="container responsive_container_lg">
+      <div class="settings_container">
+
+         <h2 class="title">
+            الاعدادات
+         </h2>
+
+         <p class="content">
+            رجاءً تأكد من صحة البيانات المدخلة وكن حذراً قبل النقر على زر الحفظ وتأكد من ان المعلومات المدخلة سواء كانت سابقة او الجديدة صحيحة 100% , شكرا لك
+         </p>
+
+         <form class="settings_form">
+            <div class="loader_group">
+               <div class="uploader_preview"></div>
+               <label for="uploader" class="uploader-image" title="تحميل صورة جديدة للملف الشخصي">
+                  تحميل صورة
+               </label>
+               <input type="file" name="pic" id="uploader" hidden aria-hidden="true" accept="image/*">
+            </div>
+
+            <div class="info_user">
+               <h2 class="title_form">
+                  المعلومات الاساسية
+               </h2>
+               <div class="form_groups">
+                   <div class="form_group">
+                  <label for="name" class="normal_lab">الاسم بالكامل <span class="required">*</span></label>
+                  <input type="text" name="name" id="name" placeholder="..." required autocomplete="off" spellcheck="false" autocorrect="false"  class="focus_elem">
+               </div>
+               <div class="form_group">
+                  <label for="email" class="normal_lab"> البريد الالكتروني <span class="required">*</span></label>
+                  <input type="email" name="email" id="email" placeholder="example@example.com" required autocomplete="off" spellcheck="false" autocorrect="false"  class="focus_elem" onpaste="return false">
+               </div>
+               <div class="form_group">
+                  <label for="password" class="normal_lab"> كلمة السر <span class="required">*</span></label>
+                  <input type="password" name="password" id="password" placeholder="••••••••" required autocomplete="off" spellcheck="false" autocorrect="false"  class="focus_elem" onpaste="return false" minlength="8">
+               </div>
+               <div class="form_group">
+                  <label for="confirm_password" class="normal_lab">تأكيد كلمة السر  <span class="required">*</span></label>
+                  <input type="password" name="confirm_password" id="confirm_password" placeholder="••••••••" required autocomplete="off" spellcheck="false" autocorrect="false"  class="focus_elem" onpaste="return false" minlength="8">
+               </div>
+               </div>
+               <div class="form_group">
+                  <label for="more" class="normal_lab"> المزيد عني</label>
+                  <textarea name="more" id="more" autocorrect="off" spellcheck="false" placeholder="..." class="focus_elem"></textarea>
+               </div> 
+
+               <div class="form_group">
+               <button class="btn_submit" type="submit" name="button">
+                  حفظ
+               </button>
+            </div>
+            </div>
+         </form>
+
+      </div>
+   </section>
+
+   <!-- footer container -->
+
+   <footer class="footer_container">
+      <div class="footer_box responsive_container_lg">
+         <p class="content">
+            جميع الحقوق © لدى
+            <a href="/">
+               الذكرى
+            </a>
+         </p>
+      </div>
+   </footer>
+   <!-- scripts -->
+   <script src="../script/main.js"></script>
+   <script src="script/index.js"></script>
+</body>
+</html>
